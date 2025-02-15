@@ -34,18 +34,18 @@ const user = {
       subLabel: "647",
       blur: false,
     },
-    {
-      icon: <FaHand className="mt-[3px] text-red" />,
-      label: "Newbie",
-      subLabel: "2 Cert",
-      blur: true,
-    },
-    {
-      icon: <GiStarsStack className="text-red" size={20} />,
-      label: "Master",
-      subLabel: "18 Machs",
-      blur: true,
-    },
+    // {
+    //   icon: <FaHand className="mt-[3px] text-red" />,
+    //   label: "Newbie",
+    //   subLabel: "2 Cert",
+    //   blur: true,
+    // },
+    // {
+    //   icon: <GiStarsStack className="text-red" size={20} />,
+    //   label: "Master",
+    //   subLabel: "18 Machs",
+    //   blur: true,
+    // },
   ],
 };
 
@@ -308,7 +308,7 @@ const ProgressSection = () => (
       </div>
 
       {/* Scheduled Exams */}
-      <div className="self-stretch flex-col justify-start items-start gap-4 flex blur-sm cursor-not-allowed select-none">
+      {/* <div className="self-stretch flex-col justify-start items-start gap-4 flex blur-sm cursor-not-allowed select-none">
         <p className="grow shrink basis-0 self-stretch text-white text-xl font-medium font-['Orbitron'] leading-loose">
           Scheduled Exams
         </p>
@@ -317,7 +317,7 @@ const ProgressSection = () => (
             <ExamCard key={exam.id} title={exam.title} date={exam.date} />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 );
@@ -385,13 +385,13 @@ export default function Dashboard() {
       <div className="h-14 w-full border-b border-[#2f3132] justify-start items-center gap-2 inline-flex">
         <div className="justify-start items-center flex">
           <NavTab label="Dashboard" active />
-          <NavTab label="Achieve" disabled />
-          <NavTab label="Friends" disabled />
+          {/* <NavTab label="Achieve" disabled />
+          <NavTab label="Friends" disabled /> */}
         </div>
       </div>
       <div className="w-full grid lg:grid-cols-2 grid-cols-1 items-start gap-5">
         <ProgressSection />
-        <div className="flex flex-col gap-2">
+        {/* <div className="flex flex-col gap-2">
           <div className="grid grid-cols-2 gap-1 md:gap-3">
             <StatisticCard title="Monthly Statistic" stats={statistics} />
             <div className="relative flex items-start justify-start mt-4 blur-sm select-none cursor-not-allowed">
@@ -424,7 +424,7 @@ export default function Dashboard() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

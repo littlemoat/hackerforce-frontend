@@ -383,7 +383,7 @@ const ExpandableSectionData = [
 const SettingsMenu = [
   { id: "account", label: "Account Settings", icon: CgProfile },
   { id: "security", label: "Security", icon: HiOutlineShieldCheck },
-  { id: "address", label: "Address Settings", icon: HiOutlineLocationMarker },
+  // { id: "address", label: "Address Settings", icon: HiOutlineLocationMarker },
   { id: "subscription", label: "Subscription", icon: LiaCalendarMinusSolid },
 ];
 

@@ -51,7 +51,7 @@ const SubscriptionSetting = ({ show }: { show: boolean }) => {
       </div>
 
       {/* Payment Method Card */}
-      <PaymentMethod method="Paypal" account="Jack Paypal account" />
+      {/* <PaymentMethod method="Paypal" account="Jack Paypal account" /> */}
 
       <div className="w-full border border-grey/50" />
 
