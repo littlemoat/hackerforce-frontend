@@ -216,16 +216,16 @@ const DropdownMenu = ({
         : "opacity-100 pointer-events-auto z-[9999]"
     }`}
   >
-    <div className="z-2 w-[164px] h-[178px] top-[10.75px] bg-dark absolute rounded-lg shadow-lg border border-[#2f3132] flex-col justify-center items-center inline-flex">
+    <div className="z-2 w-[164px] top-[10.75px] bg-dark absolute rounded-lg shadow-lg border border-[#2f3132] flex-col justify-start items-start inline-flex">
       <DropdownItem href="/section" label="Sections" onClick={onClose} />
-      {[
+      {/* {[
         { icon: "PracticeIcon", label: "Practice" },
         { icon: "CatalogIcon", label: "Catalog" },
         { icon: "ChambersIcon", label: "Chambers" },
         { icon: "ColosseumsIcon", label: "Colosseums" },
       ].map(({ icon, label }) => (
         <DisabledDropdownItem key={label} icon={icon} label={label} />
-      ))}
+      ))} */}
     </div>
   </div>
 );
@@ -234,14 +234,14 @@ const MobileDropdownMenu = ({ onClose }: { onClose: () => void }) => (
   <div className="w-full z-50 flex items-center justify-center mt-3">
     <div className="z-2 flex-col justify-center items-center inline-flex w-full">
       <DropdownItem href="/section" label="Sections" onClick={onClose} />
-      {[
+      {/* {[
         { icon: "PracticeIcon", label: "Practice" },
         { icon: "CatalogIcon", label: "Catalog" },
         { icon: "ChambersIcon", label: "Chambers" },
         { icon: "ColosseumsIcon", label: "Colosseums" },
       ].map(({ icon, label }) => (
         <DisabledDropdownItem key={label} icon={icon} label={label} />
-      ))}
+      ))} */}
     </div>
   </div>
 );
@@ -328,7 +328,7 @@ const DropdownItem = ({
   onClick: () => void;
 }) => (
   <Link href={href} className="w-full" onClick={onClick}>
-    <div className="cursor-pointer self-stretch px-3 py-2 border-b border-[#2f3132] flex items-center gap-2.5 w-full lg:justify-start justify-center">
+    <div className="cursor-pointer self-stretch px-3 py-2 border-[#2f3132] flex items-center gap-2.5 w-full lg:justify-start justify-center">
       <Icon
         name={"SectionsIcon"}
         size={16}
