@@ -12,13 +12,13 @@ const AccountSetting = ({ show }: { show: boolean }) => {
 
   const formFields = [
     { blur: false, label: "Username", type: "text", placeholder: "Jack" },
-    {
-      blur: true,
-      label: "Skill category",
-      type: "text",
-      placeholder: "Hardware hacking",
-      readOnly: true,
-    },
+    // {
+    //   blur: true,
+    //   label: "Skill category",
+    //   type: "text",
+    //   placeholder: "Hardware hacking",
+    //   readOnly: true,
+    // },
     {
       blur: false,
       label: "Email",

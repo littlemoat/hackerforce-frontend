@@ -37,7 +37,7 @@ const Sidebar = () => (
   <div className="lg:w-auto w-full flex flex-col gap-6 lg:max-w-[300px]">
     <ModuleProgress />
     <FileTree />
-    <PracticeMachine />
+    {/* <PracticeMachine /> */}
   </div>
 );
 
