@@ -58,14 +58,13 @@ const AccountSetting = ({ show }: { show: boolean }) => {
       {/* Form Fields */}
       <div className="self-stretch grid grid-cols-1 md:grid-cols-2 gap-4">
         {formFields.map(
-          ({ label, type, placeholder, readOnly, blur }, index) => (
+          ({ label, type, placeholder, blur }, index) => (
             <InputField
               blur={blur}
               key={index}
               label={label}
               type={type}
               placeholder={placeholder}
-              readOnly={readOnly}
             />
           )
         )}
@@ -107,13 +106,11 @@ const InputField = ({
   label,
   type,
   placeholder,
-  readOnly = false,
 }: {
   blur: boolean;
   label: string;
   type: string;
   placeholder: string;
-  readOnly?: boolean;
 }) => (
   <div
     className={`flex flex-col gap-1 ${blur && "blur-sm cursor-not-allowed"}`}
@@ -125,7 +122,6 @@ const InputField = ({
       <input
         type={type}
         placeholder={placeholder}
-        readOnly={readOnly}
         className={`w-full text-white text-base font-medium font-['Inconsolata'] bg-transparent outline-none placeholder:text-grey ${
           blur && "blur-sm cursor-not-allowed"
         }`}
